@@ -72,11 +72,31 @@ export default {
     return {
       drawer: null,
       supports: [
-        { name: 'Consulting and suppourt', icon: 'mdi-vuetify' },
-        { name: 'Discord community', icon: 'mdi-discord' },
-        { name: 'Report a bug', icon: 'mdi-bug' },
-        { name: 'Github issue board', icon: 'mdi-github' },
-        { name: 'Stack overview', icon: 'mdi-stack-overflow' }
+        {
+          name: 'Consulting and suppourt',
+          icon: 'mdi-vuetify',
+          link: '/consulting-and-support'
+        },
+        {
+          name: 'Discord community',
+          icon: 'mdi-discord',
+          link: '/discord-community'
+        },
+        {
+          name: 'Report a bug',
+          icon: 'mdi-bug',
+          link: '/report-a-bug'
+        },
+        {
+          name: 'Github issue board',
+          icon: 'mdi-github-face',
+          link: '/guthub-issue-board'
+        },
+        {
+          name: 'Stack overview',
+          icon: 'mdi-stack-overflow',
+          link: '/stack-overview'
+        }
       ],
       nav_lists: [
         {
