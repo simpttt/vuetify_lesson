@@ -4,9 +4,7 @@
       <v-container>
         <v-list-item>
           <v-list-item-content>
-            <v-list-item-title class="title grey--text text--darken-2"
-              >Navigation lists</v-list-item-title
-            >
+            <v-list-item-title class="title grey--text text--darken-2">Navigation lists</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         <v-divider></v-divider>
@@ -47,7 +45,7 @@
           </template>
           <v-list>
             <v-subheader>Get help</v-subheader>
-            <v-list-item v-for="support in supports" :key="support.name">
+            <v-list-item v-for="support in supports" :key="support.name" :to="support.link">
               <v-list-item-icon>
                 <v-icon>{{ support.icon }}</v-icon>
               </v-list-item-icon>
@@ -68,7 +66,7 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       drawer: null,
       supports: [
