@@ -57,9 +57,9 @@
         </v-menu>
       </v-toolbar-items>
     </v-app-bar>
-    <v-content>
+    <v-main>
       <router-view />
-    </v-content>
+    </v-main>
     <v-footer color="primary" dark app>Vuetify</v-footer>
   </v-app>
 </template>
@@ -96,7 +96,7 @@ export default {
           link: '/stack-overview'
         }
       ],
-      nav_lists: [
+      navLists: [
         {
           name: 'Getting Started',
           icon: 'mdi-speedometer',
